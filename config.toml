@@ -1,0 +1,223 @@
+# Page settings
+
+baseurl = "http://evfurman.com/"
+languageCode = "en-us"
+title = "Evan Furman"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-114908438-1"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Evan Furman CV"
+    author = "Evan Furman"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Evan Furman"
+        tagline = "Senior DevOps Engineer"
+        avatar = "me.jpg"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: evfurman@gmail.com"
+        title = "evfurman@gmail.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+15123736203"
+        title = "+15123736203"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "https://evfurman.com"
+        title = "evfurman.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "https://linkedin.com/in/evfurman"
+        title = "linkedin"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "github"
+        title = "github.com/evfurman"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/evfurman"
+        title = "@evfurman"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "Bachelor of Liberal Arts"
+        college = "University of Texas"
+        dates = "2004 - 2008"
+
+    # Languages section
+    [params.language]
+        enable = false
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Native"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Skateboarding"
+
+        [[params.interests.list]]
+        interest = "Snowboarding"
+
+        [[params.interests.list]]
+        interest = "Hockey"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "Senior Systems Engineer with experience architecting, configuring, and maintaining AWS environments. Most recently my expertise is in building CI/CD pipelines employing Gitlab with API Gateway and Kubernetes. I am passionate about technical mentorship, striving for continual improvement of myself, my colleagues, and my customers."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Senior AWS DevOps Engineer"
+        dates = "2016 - Present"
+        company = "Front Gate Tickets, Austin"
+        details = "Responsible for architecting, scaling, and maintaining a high volume festival ticketing infrastructure through frequent high-demand on-sales. \n\n Tasked with leading engineering teams toward a fully-automated CI/CD workflow utilizing Gitlab, AWS Serverless Application Model (SAM), Kubernetes, Cloudformation and local development environments. \n\n Planned, managed and migrated over 50 networking appliances, servers, and storage devices from vSphere on bare-metal to various AWS services, Spotinst, and into containers. \n\n Managed 2 core applications (TM Resale & Yellowfin) throughout their full lifecycle from initial inception through containerization and deployment to Kubernetes clusters. \n\n Develop and architect to meet standards to maintain GDPR / SOX / PCI compliance."
+
+        [[params.jobs.list]]
+        position = "Cloud Support Engineer"
+        dates = "2015 - 2016"
+        company = "Amazon, Seattle"
+        details = "Assisted customers in architecting scalable, fault-tolerant solutions in the AWS cloud. \n\n Deep-dive issues to provide root-case analysis on network, host, instance, and OS-levels. \n\n Author bash/python/AWS-CLI scripts to facilitate exchange of configurations and metrics. \n\n Advise on industry best practices both AWS-specific and general system administration. \n\n Train and develop peers in the fundamentals of Linux administration."
+
+        [[params.jobs.list]]
+        position = "Enterprise Linux Administrator"
+        dates = "2014 - 2015"
+        company = "Rackspace, Austin"
+        details = " Installed, configured and troubleshot services including Apache, Nginx, MySQL, Java, PHP, FTP, SSH, and DNS. \n\n Responded to urgent monitoring events and provided prompt and accurate root-cause analysis. \n\n Advised customers who were considering new deployments in terms of both hardware and software. \n\n Resolved server down-time issues utilizing DRAC, iLO or vSphere. \n\n Analyzed and pinpointed performance issues related to resource consumption, disk IO, and networking. \n\n Authored and utilized shell scripting as necessary to expedite resolution and streamline techniques. \n\n Designed, QC’d, and implemented maintenance plans involving multi-department coordination."
+
+        [[params.jobs.list]]
+        position = "Technical Account Manager"
+        dates = "2013 - 2014"
+        company = "Rackspace, Austin"
+        details = "Provided dedicated account management to over 200 Linux SMB customers. \n\n Collaborated with support engineers to facilitate escalated levels of troubleshooting on both Linux and Windows. \n\n Negotiated renewal contracts for consumption of Rackspace portfolio including private and public cloud. \n\n Consulted with other business units to ensure customers with diverse product needs received a highly personalized and consistent experience. \n\n Trained account management team in upgrade discussions and developed new-hires in all job functions."
+    
+    # Projects section
+    [params.projects]
+        enable = false
+        icon = "fa-archive"
+        title = "Certifications"
+        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+
+        [[params.projects.list]]
+        title = "Hugrid"
+        url = "https://github.com/aerohub/hugrid"
+        tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+
+        [[params.projects.list]]
+        title = "Simple FAQ Theme for Hugo"
+        url = "https://github.com/aerohub/hugo-faq-theme"
+        tagline = "Simple FAQ Theme for Hugo. You may use this theme for building very simple FAQs or note lists."
+
+        [[params.projects.list]]
+        title = "Hugo Identity"
+        url = "https://github.com/aerohub/hugo-identity-theme"
+        tagline = "Little profile/card-style template for Hugo."
+
+        [[params.projects.list]]
+        title = "Orbit"
+        url = "https://github.com/aerohub/hugo-orbit-theme"
+        tagline = "Hugo Resume/CV Theme for Developers."
+
+        [[params.projects.list]]
+        title = "Me"
+        url = "https://github.com/aerohub/hugo-me-theme"
+        tagline = "A simple responsive Hugo theme for personal site."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "CI/CD"
+        level = "90%"
+                
+        [[params.skills.list]]
+        skill = "Amazon Web Services"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Kubernetes"
+        level = "75%"
+
+        [[params.skills.list]]
+        skill = "Gitlab"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "Cloudformation"
+        level = "80%"
+        
+        [[params.skills.list]]
+        skill = "GDPR"
+        level = "80%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "&copy;2018 Evan Furman"
